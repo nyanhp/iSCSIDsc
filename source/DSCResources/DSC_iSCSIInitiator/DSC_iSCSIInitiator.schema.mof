@@ -2,7 +2,7 @@
 class DSC_iSCSIInitiator : OMI_BaseResource
 {
     [Key, Description("Represents the IQN of the discovered target.")] String NodeAddress;
-    [Required, Description("Specifies the IP address or DNS name of the target portal.")] String TargetPortalAddress;
+    [Key, Description("Specifies the IP address or DNS name of the target portal.")] String TargetPortalAddress;
     [Write, Description("Ensures that Target is Absent or Present."), ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
     [Write, Description("Specifies the IP address associated with the target portal.")] String InitiatorPortalAddress;
     [Write, Description("Specifies the TCP/IP port number for the target portal.")] Uint16 TargetPortalPortNumber;

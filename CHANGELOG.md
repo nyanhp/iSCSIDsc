@@ -42,6 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed unused test helper function `New-VDisk`.
 - Added test helper function `Assert-CanRunIntegrationTest` to validate if
   integration tests can be successfully run on a machine.
+- Made `TargetPortalAddress` in resource `iSCSIInitiator` a key property to
+  enable cross-wise connections
 
 ## [1.5.0.41] - 2017-09-02
 
